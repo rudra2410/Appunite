@@ -122,7 +122,7 @@ const Articles = () => {
       </div>
 
       <div className="flex justify-center items-center my-4 lg:px-0 xs:px-4">
-        <button className="button size-60 h-12">
+        <button className="button">
           <span className="capitalize">Visit our blog For more</span>
         </button>
       </div>

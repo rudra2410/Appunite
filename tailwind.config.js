@@ -16,7 +16,7 @@ export default {
       },
       borderRadius: {
         base: "0% 100% 100% 0%",
-        basic: "0% 0% 550% 0%",
+        basic: "0% 0% 100% 0%",
       },
       borderWidth: {
         1.5: "1.5px",

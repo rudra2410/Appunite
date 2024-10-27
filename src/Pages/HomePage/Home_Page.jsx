@@ -8,7 +8,6 @@ import Employee from "../HomePage/Employee";
 import Business_Section from "../HomePage/Business_Section";
 import Articles from "../HomePage/Articles";
 
-
 const Home_Page = () => {
   return (
     <div>
@@ -20,6 +19,9 @@ const Home_Page = () => {
       <Business_Section />
       <Articles />
       <Contact />
+      <div>
+        <h1></h1>
+      </div>
     </div>
   );
 };

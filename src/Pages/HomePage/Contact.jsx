@@ -3,7 +3,7 @@ import { GoUpload } from "react-icons/go";
 
 const Contact = () => {
   return (
-    <section className="bg-[rgba(245,243,243,0.93)]">
+    <section className="bg-[rgba(236,236,236,0.5)]">
       <div className="py-12  container">
         <h1 className="text-[32px] md:text-[40px] font-medium mb-4">Contact</h1>
         <p className="text-[16px] md:text-[20px] font-medium mb-8 max-w-2xl">

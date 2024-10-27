@@ -262,101 +262,105 @@ const Business_Section = () => {
   };
 
   return (
-    <div className="">
+    <div>
       {/* Left Side */}
       <div className="min-h-screen grid grid-cols-1 lg:grid-cols-2">
-        <div className="bg-[rgba(0,0,0,0.9)] text-white p-6 lg:pe-20 flex flex-col justify-center">
-          <h2 className="text-[18px] lg:text-[24px] pl-8 font-medium mb-10 lg:mb-20 leading-6 lg:leading-8 lg:text-left">
-            Our product development teams will unleash your vision with
-            technology by taking ownership over the process and stay responsible
-            for your business goals.
-          </h2>
+        <div className="bg-[rgba(0,0,0,0.9)] text-white pe-10 flex flex-col justify-center">
+          <div className="container mr-20">
+            <h2 className="text-[18px] lg:text-[24px] max-w-xl pl-8 font-medium py-10 lg:mb-20 leading-6 lg:leading-8 lg:text-left">
+              Our product development teams will unleash your vision with
+              technology by taking ownership over the process and stay
+              responsible for your business goals.
+            </h2>
 
-          <div className="space-y-3">
-            <div
-              className={`flex items-center justify-between p-3 lg:p-2.5 ${
-                selectedOption === "Product Idea"
-                  ? "bg-black scale-105 lg:scale-110"
-                  : ""
-              } hover:bg-[rgba(0,0,0,0.2)] hover:scale-105 lg:hover:scale-110 transition-transform duration-[0.3s] ease-in-out`}
-              onClick={() => setSelectedOption("Product Idea")}
-            >
-              <a
-                href="#data"
-                className="text-[14px] lg:text-[16px] text-white px-10"
+            <div className="space-y-3">
+              <div
+                className={`flex items-center justify-between p-3 lg:p-2.5 ${
+                  selectedOption === "Product Idea"
+                    ? "bg-black scale-105 lg:scale-110"
+                    : ""
+                } hover:bg-[rgba(0,0,0,0.2)] hover:scale-105 lg:hover:scale-110 transition-transform duration-[0.3s] ease-in-out`}
+                onClick={() => setSelectedOption("Product Idea")}
               >
-                We Focus On{" "}
-                <span className="font-semibold">Business Goals</span>
-              </a>
-              <span className="text-white text-lg lg:text-xl">
-                <TiArrowRight className="text-sub-color text-[30px]" />
-              </span>
-            </div>
+                <a
+                  href="#data"
+                  className="text-[14px] lg:text-[16px] text-white px-10"
+                >
+                  We Focus On{" "}
+                  <span className="font-semibold">Business Goals</span>
+                </a>
+                <span className="text-white text-lg lg:text-xl">
+                  <TiArrowRight className="text-sub-color text-[30px]" />
+                </span>
+              </div>
 
-            <div
-              className={`flex items-center justify-between p-3 lg:pb-4 px-8 lg:px-20 ${
-                selectedOption === "Product Release"
-                  ? "bg-black scale-100 lg:scale-110"
-                  : ""
-              } hover:bg-[rgba(0,0,0,0.2)] hover:scale-100 lg:hover:scale-110 transition-transform duration-[0.3s] ease-in-out`}
-              onClick={() => setSelectedOption("Product Release")}
-            >
-              <a
-                href="#data1"
-                className="text-[14px] lg:text-[16px] text-sub-color px-10"
+              <div
+                className={`flex items-center justify-between p-3 lg:pb-4 px-8 lg:px-20 ${
+                  selectedOption === "Product Release"
+                    ? "bg-black scale-100 lg:scale-110"
+                    : ""
+                } hover:bg-[rgba(0,0,0,0.2)] hover:scale-100 lg:hover:scale-110 transition-transform duration-[0.3s] ease-in-out`}
+                onClick={() => setSelectedOption("Product Release")}
               >
-                We Help With
-                <span className="font-semibold">Business Idea Validation</span>
-              </a>
-              <span className="text-white text-lg lg:text-xl">
-                <TiArrowRight className="text-sub-color text-[30px]" />
-              </span>
-            </div>
+                <a
+                  href="#data1"
+                  className="text-[14px] lg:text-[16px] text-sub-color px-10"
+                >
+                  We Help With
+                  <span className="font-semibold">
+                    Business Idea Validation
+                  </span>
+                </a>
+                <span className="text-white text-lg lg:text-xl">
+                  <TiArrowRight className="text-sub-color text-[30px]" />
+                </span>
+              </div>
 
-            <div
-              className={`flex items-center justify-between p-3 lg:pb-4 px-8 lg:px-20 ${
-                selectedOption === "Product Scale Up"
-                  ? "bg-black scale-105 lg:scale-110"
-                  : ""
-              } hover:bg-[rgba(0,0,0,0.2)] hover:scale-105 lg:hover:scale-110 transition-transform duration-[0.3s] ease-in-out`}
-              onClick={() => setSelectedOption("Product Scale Up")}
-            >
-              <a
-                href="#data2"
-                className="text-[14px] lg:text-[16px] text-sub-color px-10 "
+              <div
+                className={`flex items-center justify-between p-3 lg:pb-4 px-8 lg:px-20 ${
+                  selectedOption === "Product Scale Up"
+                    ? "bg-black scale-105 lg:scale-110"
+                    : ""
+                } hover:bg-[rgba(0,0,0,0.2)] hover:scale-105 lg:hover:scale-110 transition-transform duration-[0.3s] ease-in-out`}
+                onClick={() => setSelectedOption("Product Scale Up")}
               >
-                We Build
-                <span className="font-semibold">Bespoke Teams</span>
-              </a>
-              <span className="text-white text-lg lg:text-xl">
-                <TiArrowRight className="text-sub-color text-[30px]" />
-              </span>
-            </div>
+                <a
+                  href="#data2"
+                  className="text-[14px] lg:text-[16px] text-sub-color px-10 "
+                >
+                  We Build
+                  <span className="font-semibold">Bespoke Teams</span>
+                </a>
+                <span className="text-white text-lg lg:text-xl">
+                  <TiArrowRight className="text-sub-color text-[30px]" />
+                </span>
+              </div>
 
-            <div
-              className={`flex items-center justify-between p-3 lg:pb-4 px-8 lg:px-20 ${
-                selectedOption === "Digital Transformation"
-                  ? "bg-black scale-105 lg:scale-110"
-                  : ""
-              } hover:bg-[rgba(0,0,0,0.2)] hover:scale-105 lg:hover:scale-110 transition-transform duration-[0.3s] ease-in-out`}
-              onClick={() => setSelectedOption("Digital Transformation")}
-            >
-              <a
-                href="#data3"
-                className="text-[14px] lg:text-[16px] text-sub-color px-10"
+              <div
+                className={`flex items-center justify-between p-3 lg:pb-4 px-8 lg:px-20 ${
+                  selectedOption === "Digital Transformation"
+                    ? "bg-black scale-105 lg:scale-110"
+                    : ""
+                } hover:bg-[rgba(0,0,0,0.2)] hover:scale-105 lg:hover:scale-110 transition-transform duration-[0.3s] ease-in-out`}
+                onClick={() => setSelectedOption("Digital Transformation")}
               >
-                We Expertice in
-                <span className="font-semibold">Async Communication</span>
-              </a>
-              <span className="text-white text-lg lg:text-xl">
-                <TiArrowRight className="text-sub-color text-[30px]" />
-              </span>
+                <a
+                  href="#data3"
+                  className="text-[14px] lg:text-[16px] text-sub-color px-10"
+                >
+                  We Expertice in
+                  <span className="font-semibold">Async Communication</span>
+                </a>
+                <span className="text-white text-lg lg:text-xl">
+                  <TiArrowRight className="text-sub-color text-[30px]" />
+                </span>
+              </div>
             </div>
           </div>
         </div>
 
         <div className="bg-main-color p-6 lg:p-10 flex flex-col justify-center">
-          {renderContent()}
+          <div className="container ml-0">{renderContent()}</div>
         </div>
         {/* Right Side */}
       </div>

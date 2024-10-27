@@ -17,13 +17,13 @@ const Help_Section = () => {
       </div>
 
       {/* Right Side */}
-      <div className="flex-1 lg:pl-20 space-y-10 px-10">
+      <div className="flex-1 lg:pl-10 space-y-10 px-10">
         {/* First Profile */}
         <div className="flex items-center space-x-4">
           <img
             src={img1}
             alt="Nikola Wlodarczyk"
-            className="w-12 h-12 sm:w-16 sm:h-16 rounded-full"
+            className="lg:w-16 lg:h-16 xs:w-14 xs:h-14 rounded-full"
           />
           <div className="space-y-2">
             <h1 className="text-[#212529] font-semibold text-[16px] sm:text-[20px]">
@@ -51,7 +51,7 @@ const Help_Section = () => {
           <img
             src={img2}
             alt="Klaudia Bryl"
-            className="w-12 h-12 sm:w-16 sm:h-16 rounded-full"
+            className="lg:w-16 lg:h-16 xs:w-14 xs:h-14 rounded-full"
           />
           <div className="space-y-2">
             <h1 className="text-[#212529] font-semibold text-[16px] sm:text-[20px]">

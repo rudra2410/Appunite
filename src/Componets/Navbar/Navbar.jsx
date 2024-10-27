@@ -3,18 +3,19 @@ import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import logo from "../../assets/Apexture Icon Blue.png";
 import { NavLink } from "react-router-dom";
-import { IoRemoveOutline } from "react-icons/io5";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // State to manage mobile menu
 
+  // Function to close the menu
+  const closeMenu = () => setIsOpen(false);
+
   return (
-    // <div className="fixed w-full">
-    <section className="mx-auto relative lg:px-10 xs:px-2">
+    <section className="sticky top-0 z-10 mx-auto lg:px-10 xs:px-2 bg-white">
       <div className="flex justify-between items-center p-2">
         {/* Logo */}
         <div className="Logo flex">
-          <NavLink to="/">
+          <NavLink to="/" onClick={closeMenu}>
             <img src={logo} alt="Weblogo" className="h-10" />
           </NavLink>
         </div>
@@ -60,7 +61,6 @@ const Navbar = () => {
             onClick={() => setIsOpen(!isOpen)}
             className="focus:outline-none"
           >
-            {/* Icon for mobile menu */}
             {isOpen ? (
               <IoClose className="size-10" />
             ) : (
@@ -78,24 +78,27 @@ const Navbar = () => {
       >
         <ul className="flex flex-col text-start space-y-5 mt-40">
           <li>
-            <a
-              href="#"
+            <NavLink
+              to="/Blog"
+              onClick={closeMenu}
               className="hover:bg-[#D0FF6D] transition-all text-[30px] duration-200 ease-linear px-3 py-1.5 block w-full text-start"
             >
               Blog
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href="#"
+            <NavLink
+              to="/career"
+              onClick={closeMenu}
               className="hover:bg-[#D0FF6D] transition-all text-[30px] duration-200 ease-linear px-3 py-1.5 block w-full text-start"
             >
               Career
-            </a>
+            </NavLink>
           </li>
           <li>
             <a
               href="#"
+              onClick={closeMenu}
               className="hover:bg-[#D0FF6D] transition-all text-[30px] duration-200 ease-linear px-3 py-1.5 block w-full text-start"
             >
               Our Result
@@ -103,7 +106,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="absolute bottom-0 left-4 py-4">
-          <button className="button w-56 h-auto">
+          <button className="button w-56 h-auto" onClick={closeMenu}>
             <span>Get In Touch</span>
           </button>
         </div>
@@ -112,12 +115,11 @@ const Navbar = () => {
       {/* Overlay (shown when menu is open, with z-index) */}
       {isOpen && (
         <div
-          onClick={() => setIsOpen(false)}
-          className="fixed inset-0 backdrop-blur-[2px] bg-black/30 z-30 lg:hidden" // Apply backdrop filter for blur and add transparent background
+          onClick={closeMenu}
+          className="fixed inset-0 backdrop-blur-[2px] bg-black/30 z-30 lg:hidden"
         />
       )}
     </section>
-    // </div>
   );
 };
 
