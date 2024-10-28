@@ -10,12 +10,12 @@ import { FreeMode, Pagination } from "swiper/modules";
 
 const Employee = () => {
   return (
-    <div className="py-10 container">
+    <div className="py-10 mx-auto lg:container xs:px-3">
       <div className="space-y-5">
-        <h1 className="text-black lg:text-[45px] xs:text-[30px] font-bold text-left">
+        <h1 className="text-black lg:text-larger xs:text-large font-bold text-left">
           How much value <br /> do you need?
         </h1>
-        <p className="text-black lg:text-[24px] xs:text-[20px] text-left font-normal max-w-xl leading-7">
+        <p className="text-black lg:text-lg xs:text-md text-left font-normal max-w-xl leading-7">
           While 73% of products run out of cash before they find a market fit,
           Empowered Teams focus on the business outcome. Right approach leads to
           right tactics, outcomes and success.
@@ -46,7 +46,7 @@ const Employee = () => {
       >
         <SwiperSlide>
           <div className="border-1.5 border-black p-6 text-left space-y-5 rounded-md mt-10 w-full">
-            <h3 className="text-[22px] font-semibold mb-4">Empowered Teams</h3>
+            <h3 className="text-md font-semibold mb-4">Empowered Teams</h3>
             <h1>FOCUS: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Business Goals</h1>
             <h1>OUTPUT: &nbsp;&nbsp;&nbsp;Relevant Features</h1>
             <h1>OUTCOME: Business Value</h1>

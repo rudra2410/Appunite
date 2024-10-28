@@ -10,7 +10,7 @@ const FAQ_Section = () => {
       case "Product Idea":
         return (
           <div>
-            <p className="text-[#ffefef] font-normal text-[16px] mb-8">
+            <p className="text-p-color font-medium lg:text-small mb-8">
               We will help you optimize your endeavors for the best business
               outcome by researching the market and validating digital product
               concepts. Then, we foster optimal user journeys with Product
@@ -96,7 +96,7 @@ const FAQ_Section = () => {
       case "Product Release":
         return (
           <div>
-            <p className="text-sub-color font-medium text-[16px] mb-8">
+            <p className="text-p-color font-medium lg:text-small mb-8">
               We will guide you through every step of the new product journey.
               From initial concept validation to execution, we ensure your in My
               Life product is poised for success.
@@ -354,7 +354,7 @@ const FAQ_Section = () => {
       case "Product Scale Up":
         return (
           <div>
-            <p className="text-sub-color font-medium text-[16px] mb-8">
+            <p className="text-p-color font-medium lg:text-small mb-8">
               We will assess your current infrastructure, identify bottlenecks,
               and implement scalable solutions. With our expertise, you can
               confidently optimize performance, add new features and expand your
@@ -390,7 +390,7 @@ const FAQ_Section = () => {
       case "Digital Transformation":
         return (
           <div>
-            <p className="text-sub-color font-medium text-[16px] mb-8">
+            <p className="text-p-color font-medium lg:text-small mb-8">
               Our team specializes in transforming businesses, ensuring you
               leverage the latest technologies and methodologies. From strategy
               to execution, we'll revitalize your operations, making you more
@@ -428,55 +428,55 @@ const FAQ_Section = () => {
     <div className="min-h-screen grid grid-cols-1 lg:grid-cols-2">
       {/* Left Side */}
       <div className="bg-[rgba(0,0,0,0.9)] text-white pe-10 flex flex-col justify-center">
-        <div className="container mr-20">
-          <h2 className="text-[18px] lg:text-[24px] max-w-md font-bold my-10 lg:mb-20 ml-10 leading-6 lg:leading-8 lg:text-left">
+        <div className="lg:container lg:mx-auto lg:mr-20 mb-4">
+          <h1 className="text-small lg:text-xl max-w-md font-bold my-10 ml-6 leading-6 lg:leading-8 lg:text-left">
             We are dedicated to solving the critical challenges faced by CTOs
             and CPOs, both the strategic and execution levels.
-          </h2>
+          </h1>
 
           <div className="space-y-3">
             <div
-              className={`flex items-center justify-between p-3 lg:p-2.5 ${
+              className={`flex items-center justify-between p-2.5 px-2.5 ${
                 selectedOption === "Product Idea"
                   ? "bg-black scale-100 lg:scale-110"
                   : ""
-              } hover:bg-[rgba(0,0,0,0.2)] hover:scale-110 transition-transform duration-[0.3s] ease-in-out`}
+              } hover:bg-[rgba(0,0,0,0.2)] hover:scale-105 transition-transform duration-[0.3s] ease-in-out`}
               onClick={() => setSelectedOption("Product Idea")}
             >
               <a
                 href="#data"
-                className="text-[14px] lg:text-[16px] px-10 text-white"
+                className="lg:text-small xs:text-extraSmall lg:px-10 text-white"
               >
                 If you have a{" "}
                 <span className="font-semibold">Product Idea</span>
               </a>
               <span className="text-white text-lg lg:text-xl">
-                <TiArrowRight className="text-sub-color text-[30px]" />
+                <TiArrowRight className="text-p-color text-[30px]" />
               </span>
             </div>
 
             <div
-              className={`flex items-center justify-between p-2.5 lg:pb-4 px-8 lg:px-20 ${
+              className={`flex items-center justify-between p-2.5 lg:pb-4 px-6  ${
                 selectedOption === "Product Release"
-                  ? "bg-black scale-100 lg:scale-110"
+                  ? "bg-black scale-105 lg:scale-110"
                   : ""
-              } hover:bg-[rgba(0,0,0,0.2)] hover:scale-100 lg:hover:scale-110 transition-transform duration-[0.3s] ease-in-out`}
+              } hover:bg-[rgba(0,0,0,0.2)] hover:scale-105 lg:hover:scale-110 transition-transform duration-[0.3s] ease-in-out`}
               onClick={() => setSelectedOption("Product Release")}
             >
               <a
-                href="#data1"
-                className="text-[14px] lg:text-[16px] px-10 text-sub-color"
+                href="#data2"
+                className="text-[14px] lg:lg:text-small xs:text-extraSmall lg:px-10 text-p-color"
               >
-                If you want a{" "}
-                <span className="font-semibold">Product Release</span>
+                If you need a{" "}
+                <span className="font-semibold">Product Relese</span>
               </a>
-              <span className="text-white text-lg lg:text-xl">
-                <TiArrowRight className="text-sub-color text-[30px]" />
+              <span className="text-white text-lg lsg:text-xl">
+                <TiArrowRight className="text-p-color text-[30px]" />
               </span>
             </div>
 
             <div
-              className={`flex items-center justify-between p-2.5 lg:pb-4 px-8 lg:px-20 ${
+              className={`flex items-center justify-between p-2.5 lg:pb-4 px-6  ${
                 selectedOption === "Product Scale Up"
                   ? "bg-black scale-105 lg:scale-110"
                   : ""
@@ -485,18 +485,18 @@ const FAQ_Section = () => {
             >
               <a
                 href="#data2"
-                className="text-[14px] lg:text-[16px] px-10 text-sub-color"
+                className="text-[14px] lg:lg:text-small xs:text-extraSmall lg:px-10 text-p-color"
               >
                 If you need a{" "}
                 <span className="font-semibold">Product Scale Up</span>
               </a>
               <span className="text-white text-lg lg:text-xl">
-                <TiArrowRight className="text-sub-color text-[30px]" />
+                <TiArrowRight className="text-p-color text-[30px]" />
               </span>
             </div>
 
             <div
-              className={`flex items-center justify-between p-2.5 lg:pb-4 px-8 lg:px-20 ${
+              className={`flex items-center justify-between p-2.5 lg:pb-4 px-6 ${
                 selectedOption === "Digital Transformation"
                   ? "bg-black scale-105 lg:scale-110"
                   : ""
@@ -505,21 +505,21 @@ const FAQ_Section = () => {
             >
               <a
                 href="#data3"
-                className="text-[14px] lg:text-[16px] px-10 text-sub-color"
+                className="text-[14px] lg:lg:text-small xs:text-extraSmall lg:px-10 text-p-color"
               >
                 If you need a{" "}
-                <span className="font-semibold">Digital Transformation</span>
+                <span className="font-semibold">Transformation</span>
               </a>
               <span className="text-white text-lg lg:text-xl">
-                <TiArrowRight className="text-sub-color text-[30px]" />
+                <TiArrowRight className="text-p-color text-[30px]" />
               </span>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="bg-main-color p-6 lg:p-10 flex justify-center flex-col">
-        <div className="container ml-0">{renderContent()}</div>
+      <div className="bg-main-color lg:p-10 xs:pl-4 flex justify-center flex-col">
+        <div className="container ml-0 py-4">{renderContent()}</div>
       </div>
       {/* Right Side */}
     </div>

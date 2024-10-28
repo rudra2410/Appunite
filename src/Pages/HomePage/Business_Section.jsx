@@ -10,7 +10,7 @@ const Business_Section = () => {
       case "Product Idea":
         return (
           <div>
-            <p className="text-[#ffefef] font-normal text-[18px] mb-8">
+            <p className="text-p-color font-normal lg:text-small mb-8">
               We understand that execution is the key to getting your business
               to the next level (financing round, BEP or scale).
             </p>
@@ -102,9 +102,10 @@ const Business_Section = () => {
       case "Product Release":
         return (
           <div>
-            <p className="text-sub-color font-medium text-[18px] mb-8">
-              We don’t measure our success by releasing the code to production,
-              we measure it by solving your business’s problems.
+            <p className="text-p-color font-medium lg:text-small mb-8">
+              We will guide you through every step of the new product journey.
+              From initial concept validation to execution, we ensure your in My
+              Life product is poised for success.
             </p>
             <svg
               viewBox="0 0 482 208"
@@ -180,10 +181,13 @@ const Business_Section = () => {
       case "Product Scale Up":
         return (
           <div>
-            <p className="text-sub-color font-medium text-[18px] mb-8">
-              We provide a competent team that takes ownership of challenges.
-              Our mission is to put your product on the path to success.
+            <p className="text-p-color font-medium lg:text-small mb-8">
+              We will assess your current infrastructure, identify bottlenecks,
+              and implement scalable solutions. With our expertise, you can
+              confidently optimize performance, add new features and expand your
+              user base.
             </p>
+
             <svg
               viewBox="0 0 482 142"
               fill="none"
@@ -213,15 +217,18 @@ const Business_Section = () => {
       case "Digital Transformation":
         return (
           <div>
-            <p className="text-sub-color font-medium text-[18px] mb-8">
-              We pay special attention to excellent communication &
-              documentation in the async world and possible anytime if needed.
+            <p className="text-p-color font-medium lg:text-small mb-8">
+              Our team specializes in transforming businesses, ensuring you
+              leverage the latest technologies and methodologies. From strategy
+              to execution, we'll revitalize your operations, making you more
+              agile and efficient.
             </p>
+
             <svg
               viewBox="0 0 382 180"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="size-[70%]"
+              className="size-[60%]"
             >
               <path
                 d="M60.7031 44.7234C60.7031 50.1357 56.3125 54.5233 50.9023 54.5233C45.4883 54.5233 41.1016 50.1357 41.1016 44.7234C41.1016 39.3109 45.4883 34.9233 50.9023 34.9233C56.3125 34.9233 60.7031 39.3109 60.7031 44.7234Z"
@@ -262,108 +269,107 @@ const Business_Section = () => {
   };
 
   return (
-    <div>
+    <div className="min-h-screen grid grid-cols-1 lg:grid-cols-2">
       {/* Left Side */}
-      <div className="min-h-screen grid grid-cols-1 lg:grid-cols-2">
-        <div className="bg-[rgba(0,0,0,0.9)] text-white pe-10 flex flex-col justify-center">
-          <div className="container mr-20">
-            <h2 className="text-[18px] lg:text-[24px] max-w-xl pl-8 font-medium py-10 lg:mb-20 leading-6 lg:leading-8 lg:text-left">
-              Our product development teams will unleash your vision with
-              technology by taking ownership over the process and stay
-              responsible for your business goals.
-            </h2>
+      <div className="bg-[rgba(0,0,0,0.9)] text-white pe-10 flex flex-col justify-center">
+        <div className="lg:container lg:mx-auto lg:mr-20 mb-4">
+          <h1 className="text-small lg:text-lg max-w-md font-bold my-10 ml-6 leading-6 lg:leading-8 lg:text-left">
+            We are dedicated to solving the critical challenges faced by CTOs
+            and CPOs, both the strategic and execution levels.
+          </h1>
 
-            <div className="space-y-3">
-              <div
-                className={`flex items-center justify-between p-3 lg:p-2.5 ${
-                  selectedOption === "Product Idea"
-                    ? "bg-black scale-105 lg:scale-110"
-                    : ""
-                } hover:bg-[rgba(0,0,0,0.2)] hover:scale-105 lg:hover:scale-110 transition-transform duration-[0.3s] ease-in-out`}
-                onClick={() => setSelectedOption("Product Idea")}
+          <div className="space-y-3">
+            <div
+              className={`flex items-center justify-between p-2.5 px-2.5 ${
+                selectedOption === "Product Idea"
+                  ? "bg-black scale-100 lg:scale-110"
+                  : ""
+              } hover:bg-[rgba(0,0,0,0.2)] hover:scale-105 transition-transform duration-[0.3s] ease-in-out`}
+              onClick={() => setSelectedOption("Product Idea")}
+            >
+              <a
+                href="#data"
+                className="lg:text-small xs:text-lg lg:px-10 text-white"
               >
-                <a
-                  href="#data"
-                  className="text-[14px] lg:text-[16px] text-white px-10"
-                >
-                  We Focus On{" "}
-                  <span className="font-semibold">Business Goals</span>
-                </a>
-                <span className="text-white text-lg lg:text-xl">
-                  <TiArrowRight className="text-sub-color text-[30px]" />
-                </span>
-              </div>
+                If you have a{" "}
+                <span className="font-semibold">Product Idea</span>
+              </a>
+              <span className="text-white text-lg lg:text-xl">
+                <TiArrowRight className="text-p-color text-[30px]" />
+                {" "}
+              </span>
+            </div>
 
-              <div
-                className={`flex items-center justify-between p-3 lg:pb-4 px-8 lg:px-20 ${
-                  selectedOption === "Product Release"
-                    ? "bg-black scale-100 lg:scale-110"
-                    : ""
-                } hover:bg-[rgba(0,0,0,0.2)] hover:scale-100 lg:hover:scale-110 transition-transform duration-[0.3s] ease-in-out`}
-                onClick={() => setSelectedOption("Product Release")}
+            <div
+              className={`flex items-center justify-between p-2.5 lg:pb-4 px-6  ${
+                selectedOption === "Product Release"
+                  ? "bg-black scale-105 lg:scale-110"
+                  : ""
+              } hover:bg-[rgba(0,0,0,0.2)] hover:scale-105 lg:hover:scale-110 transition-transform duration-[0.3s] ease-in-out`}
+              onClick={() => setSelectedOption("Product Release")}
+            >
+              <a
+                href="#data2"
+                className="text-[14px] lg:lg:text-small xs:text-lg lg:px-10 text-p-color"
               >
-                <a
-                  href="#data1"
-                  className="text-[14px] lg:text-[16px] text-sub-color px-10"
-                >
-                  We Help With
-                  <span className="font-semibold">
-                    Business Idea Validation
-                  </span>
-                </a>
-                <span className="text-white text-lg lg:text-xl">
-                  <TiArrowRight className="text-sub-color text-[30px]" />
-                </span>
-              </div>
+                 If you need a{" "}
+                <span className="font-semibold">Product Relese</span>
+              </a>
+              <span className="text-white text-lg lsg:text-xl">
+                <TiArrowRight className="text-p-color text-[30px]" />
+                {" "}
+              </span>
+            </div>
 
-              <div
-                className={`flex items-center justify-between p-3 lg:pb-4 px-8 lg:px-20 ${
-                  selectedOption === "Product Scale Up"
-                    ? "bg-black scale-105 lg:scale-110"
-                    : ""
-                } hover:bg-[rgba(0,0,0,0.2)] hover:scale-105 lg:hover:scale-110 transition-transform duration-[0.3s] ease-in-out`}
-                onClick={() => setSelectedOption("Product Scale Up")}
+            <div
+              className={`flex items-center justify-between p-2.5 lg:pb-4 px-6  ${
+                selectedOption === "Product Scale Up"
+                  ? "bg-black scale-105 lg:scale-110"
+                  : ""
+              } hover:bg-[rgba(0,0,0,0.2)] hover:scale-105 lg:hover:scale-110 transition-transform duration-[0.3s] ease-in-out`}
+              onClick={() => setSelectedOption("Product Scale Up")}
+            >
+              <a
+                href="#data2"
+                className="text-[14px] lg:lg:text-small xs:text-lg lg:px-10 text-p-color"
               >
-                <a
-                  href="#data2"
-                  className="text-[14px] lg:text-[16px] text-sub-color px-10 "
-                >
-                  We Build
-                  <span className="font-semibold">Bespoke Teams</span>
-                </a>
-                <span className="text-white text-lg lg:text-xl">
-                  <TiArrowRight className="text-sub-color text-[30px]" />
-                </span>
-              </div>
+                 If you need a{" "}
+                <span className="font-semibold">Product Scale Up</span>
+              </a>
+              <span className="text-white text-lg lg:text-xl">
+                <TiArrowRight className="text-p-color text-[30px]" />
+                {" "}
+              </span>
+            </div>
 
-              <div
-                className={`flex items-center justify-between p-3 lg:pb-4 px-8 lg:px-20 ${
-                  selectedOption === "Digital Transformation"
-                    ? "bg-black scale-105 lg:scale-110"
-                    : ""
-                } hover:bg-[rgba(0,0,0,0.2)] hover:scale-105 lg:hover:scale-110 transition-transform duration-[0.3s] ease-in-out`}
-                onClick={() => setSelectedOption("Digital Transformation")}
+            <div
+              className={`flex items-center justify-between p-2.5 lg:pb-4 px-6 ${
+                selectedOption === "Digital Transformation"
+                  ? "bg-black scale-105 lg:scale-110"
+                  : ""
+              } hover:bg-[rgba(0,0,0,0.2)] hover:scale-105 lg:hover:scale-110 transition-transform duration-[0.3s] ease-in-out`}
+              onClick={() => setSelectedOption("Digital Transformation")}
+            >
+              <a
+                href="#data3"
+                className="text-[14px] lg:lg:text-small xs:text-lg lg:px-10 text-p-color"
               >
-                <a
-                  href="#data3"
-                  className="text-[14px] lg:text-[16px] text-sub-color px-10"
-                >
-                  We Expertice in
-                  <span className="font-semibold">Async Communication</span>
-                </a>
-                <span className="text-white text-lg lg:text-xl">
-                  <TiArrowRight className="text-sub-color text-[30px]" />
-                </span>
-              </div>
+                 If you need a{" "}
+                <span className="font-semibold">Transformation</span>
+              </a>
+              <span className="text-white text-lg lg:text-xl">
+                <TiArrowRight className="text-p-color text-[30px]" />
+                {" "}
+              </span>
             </div>
           </div>
         </div>
-
-        <div className="bg-main-color p-6 lg:p-10 flex flex-col justify-center">
-          <div className="container ml-0">{renderContent()}</div>
-        </div>
-        {/* Right Side */}
       </div>
+
+      <div className="bg-main-color lg:p-10 xs:pl-4 flex justify-center flex-col">
+        <div className="container ml-0 py-4">{renderContent()}</div>
+      </div>
+      {/* Right Side */}
     </div>
   );
 };

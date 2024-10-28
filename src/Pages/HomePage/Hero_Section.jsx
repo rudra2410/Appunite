@@ -2,12 +2,12 @@ import React from "react";
 
 const Hero_Section = () => {
   return (
-    <div className="flex justify-center items-center">
-      <section className="lg:container py-40  px-4">
+    <div className="flex justify-center items-center" id="#hero">
+      <section className="lg:container lg:py-40 py-10 xs:px-3">
         <div className="flex justify-center items-center text-start">
-          <h1 className="lg:text-[45px] md:text-[30px] xs:text-[30px] font-medium  max-w-[850px] lg:text-center sm:text-start">
+          <h1 className="lg:text-larger xs:text-large lg:leading-[50px] max-w-4xl font-medium lg:text-center xs:text-start">
             <span className="text-black font-black break-all">
-              We consult and build digital product
+              We consult and build digital product{" "}
             </span>
             ensure every dollar spent on technology yields tangible business
             results

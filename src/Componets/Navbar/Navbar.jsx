@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
-import logo from "../../assets/Apexture Icon Blue.png";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -10,13 +9,50 @@ const Navbar = () => {
   // Function to close the menu
   const closeMenu = () => setIsOpen(false);
 
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <section className="sticky top-0 z-10 mx-auto lg:px-10 xs:px-2 bg-white">
-      <div className="flex justify-between items-center p-2">
+    <section className="sticky top-0 z-10 mx-auto lg:px-12 xs:px-3 bg-white">
+      <div className="flex justify-between items-center mt-2">
         {/* Logo */}
         <div className="Logo flex">
           <NavLink to="/" onClick={closeMenu}>
-            <img src={logo} alt="Weblogo" className="h-10" />
+            <div
+              className="text-large font-bold text-black flex space-x-1"
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+            >
+              {/* Hover on "A" triggers animation for the rest */}
+              <span
+                className={`transition-all duration-300 ${
+                  isHovered ? "text-main-color" : "text-black"
+                }`}
+              >
+                A
+              </span>
+              {/* Remaining letters to be animated */}
+              <span className={`letter ${isHovered ? "reveal" : "hide"}`}>
+                p
+              </span>
+              <span className={`letter ${isHovered ? "reveal" : "hide"}`}>
+                p
+              </span>
+              <span className={`letter ${isHovered ? "reveal" : "hide"}`}>
+                u
+              </span>
+              <span className={`letter ${isHovered ? "reveal" : "hide"}`}>
+                n
+              </span>
+              <span className={`letter ${isHovered ? "reveal" : "hide"}`}>
+                i
+              </span>
+              <span className={`letter ${isHovered ? "reveal" : "hide"}`}>
+                t
+              </span>
+              <span className={`letter ${isHovered ? "reveal" : "hide"}`}>
+                e
+              </span>
+            </div>
           </NavLink>
         </div>
 
@@ -26,7 +62,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/Blog"
-                className="hover:bg-[#C3C3C3] transition-all duration-200 ease-linear px-3 py-1.5"
+                className="hover:bg-nav-color transition-all duration-200 ease-linear px-3 py-1.5"
               >
                 Blog
               </NavLink>
@@ -34,7 +70,7 @@ const Navbar = () => {
             <li>
               <NavLink
                 to="/career"
-                className="hover:bg-[#C3C3C3] transition-all duration-200 ease-linear px-3 py-1.5"
+                className="hover:bg-nav-color transition-all duration-200 ease-linear px-3 py-1.5"
               >
                 Career
               </NavLink>
@@ -42,7 +78,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#"
-                className="hover:bg-[#C3C3C3] transition-all duration-200 ease-linear px-3 py-1.5"
+                className="hover:bg-nav-color transition-all duration-200 ease-linear px-3 py-1.5"
               >
                 Results of Our Work
               </a>
@@ -81,7 +117,7 @@ const Navbar = () => {
             <NavLink
               to="/Blog"
               onClick={closeMenu}
-              className="hover:bg-[#D0FF6D] transition-all text-[30px] duration-200 ease-linear px-3 py-1.5 block w-full text-start"
+              className="hover:bg-main-color transition-all text-lg duration-200 ease-linear px-3 py-1.5 block w-full text-start"
             >
               Blog
             </NavLink>
@@ -90,7 +126,7 @@ const Navbar = () => {
             <NavLink
               to="/career"
               onClick={closeMenu}
-              className="hover:bg-[#D0FF6D] transition-all text-[30px] duration-200 ease-linear px-3 py-1.5 block w-full text-start"
+              className="hover:bg-main-color transition-all text-lg duration-200 ease-linear px-3 py-1.5 block w-full text-start"
             >
               Career
             </NavLink>
@@ -99,7 +135,7 @@ const Navbar = () => {
             <a
               href="#"
               onClick={closeMenu}
-              className="hover:bg-[#D0FF6D] transition-all text-[30px] duration-200 ease-linear px-3 py-1.5 block w-full text-start"
+              className="hover:bg-main-color transition-all text-lg duration-200 ease-linear px-3 py-1.5 block w-full text-start"
             >
               Our Result
             </a>

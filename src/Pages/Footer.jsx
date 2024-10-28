@@ -9,10 +9,11 @@ import { TiWorld } from "react-icons/ti";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#F2F2F2] py-12">
-      <div className="container mx-auto">
+    <footer className="bg-[#F2F2F2] py-10">
+      <div className="px-3 lg:container mx-auto">
         {/* Main Footer Section */}
-        <div className="flex flex-col xs:justify-center xs:items-center lg:justify-start lg:items-start lg:flex-row lg:space-x-10 space-y-8 lg:space-y-0 ">
+
+        <div className="flex flex-col xs:justify-start xs:items-start lg:justify-start lg:items-start lg:flex-row lg:space-x-10 space-y-8 lg:space-y-0 ">
           {/* Logo Section */}
           <div className="flex-1">
             <img src={logo} alt="logo" className="h-20" />
@@ -27,7 +28,7 @@ const Footer = () => {
               <li>
                 <NavLink
                   to="/"
-                  className="hover:bg-[#c5c5c5] transition-all duration-300 rounded ease-in font-bold px-1 py-1.5 block"
+                  className="hover:bg-[#c5c5c5] transition-all duration-200 rounded ease-in font-bold px-1 py-1.5 block"
                 >
                   Home
                 </NavLink>
@@ -35,7 +36,7 @@ const Footer = () => {
               <li>
                 <NavLink
                   to="/article"
-                  className="hover:bg-[#c5c5c5] transition-all duration-300 rounded ease-in font-bold px-1 py-1.5 block"
+                  className="hover:bg-[#c5c5c5] transition-all duration-200 rounded ease-in font-bold px-1 py-1.5 block"
                 >
                   Blog
                 </NavLink>
@@ -43,7 +44,7 @@ const Footer = () => {
               <li>
                 <NavLink
                   to="/Business"
-                  className="hover:bg-[#c5c5c5] transition-all duration-300 rounded ease-in font-bold px-1 py-1.5 block"
+                  className="hover:bg-[#c5c5c5] transition-all duration-200 rounded ease-in font-bold px-1 py-1.5 block"
                 >
                   Our Results
                 </NavLink>
@@ -51,7 +52,7 @@ const Footer = () => {
               <li>
                 <NavLink
                   href="#"
-                  className="hover:bg-[#c5c5c5] transition-all duration-300 rounded ease-in font-bold px-1 py-1.5 block"
+                  className="hover:bg-[#c5c5c5] transition-all duration-200 rounded ease-in font-bold px-1 py-1.5 block"
                 >
                   Career
                 </NavLink>
@@ -59,7 +60,7 @@ const Footer = () => {
               <li>
                 <NavLink
                   href="#"
-                  className="hover:bg-[#c5c5c5] transition-all duration-300 rounded ease-in font-bold px-1 py-1.5 block"
+                  className="hover:bg-[#c5c5c5] transition-all duration-200 rounded ease-in font-bold px-1 py-1.5 block"
                 >
                   About us
                 </NavLink>
@@ -110,9 +111,9 @@ const Footer = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-black mt-12 pt-4 flex flex-col lg:flex-row justify-between items-center text-[14px] sm:text-[16px] text-black">
+        <div className="border-t border-black lg:mt-20 pt-4 flex flex-col lg:flex-row justify-between items-center text-[14px] sm:text-[16px] text-black">
           <div className="flex flex-col lg:flex-row items-center space-y-2 lg:space-y-0 lg:space-x-5">
-            <h1 className="text-black font-normal text-center lg:text-left">
+            <h1 className="text-black font-normal text-center lg:text-left md:text-black">
               © Appunite S.A. All rights reserved
             </h1>
             <div className="space-x-5 flex">

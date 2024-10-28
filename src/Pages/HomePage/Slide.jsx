@@ -10,8 +10,8 @@ const Slide = () => {
   return (
     <>
       {/* Marquee Slider Start */}
-      <div className="py-10">
-        <Marquee>
+      <div>
+        <Marquee className="">
           <div className="image_Wrapper">
             <img src={Elixir} alt="1" />
           </div>
@@ -28,39 +28,36 @@ const Slide = () => {
             <img src={Swift} alt="5" />
           </div>
           <div className="image_Wrapper">
-            <img src={Elixir} alt="1" />
+            <img src={Elixir} alt="6" />
           </div>
           <div className="image_Wrapper">
-            <img src={flutter} alt="3" />
-          </div>
-          <div className="image_Wrapper">
-            <img src={Swift} alt="5" />
+            <img src={react} alt="7" />
           </div>
         </Marquee>
       </div>
 
-      <div className="py-10">
+      <div className="py-5">
         <Marquee direction="right">
           <div className="image_Wrapper">
-            <h1 className="text-[20px]">User Research</h1>
+            <h1 className="text-md">User Research</h1>
           </div>
           <div className="image_Wrapper">
-            <h1 className="text-[20px]">Quality Assurance</h1>
+            <h1 className="text-md">Quality Assurance</h1>
           </div>
           <div className="image_Wrapper">
-            <h1 className="text-[20px]">Design</h1>
+            <h1 className="text-md">Design</h1>
           </div>
           <div className="image_Wrapper">
-            <h1 className="text-[20px]">Design Systems</h1>
+            <h1 className="text-md">Design Systems</h1>
           </div>
           <div className="image_Wrapper">
-            <h1 className="text-[20px]">Continuous Discovery</h1>
+            <h1 className="text-md">Continuous Discovery</h1>
           </div>
           <div className="image_Wrapper">
-            <h1 className="text-[20px]">User Research</h1>
+            <h1 className="text-md">User Research</h1>
           </div>
           <div className="image_Wrapper">
-            <h1 className="text-[20px]">User Information</h1>
+            <h1 className="text-md">User Information</h1>
           </div>
         </Marquee>
       </div>

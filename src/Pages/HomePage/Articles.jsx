@@ -14,12 +14,12 @@ import { FreeMode, Pagination } from "swiper/modules";
 const Articles = () => {
   return (
     <div>
-      <div className="py-20 container">
+      <div className="py-20 mx-auto lg:container px-3">
         <div className="space-y-5 mb-10">
-          <h1 className="text-black lg:text-[45px] xs:text-[30px] font-bold text-left">
+          <h1 className="text-black lg:text-larger xs:text-large font-bold text-left">
             Featured articles
           </h1>
-          <p className="text-black lg:text-[24px] xs:text-[20px] text-left font-normal max-w-xl leading-8">
+          <p className="text-black lg:text-lg xs:text-md text-left font-normal max-w-xl leading-8">
             How to eliminate ineffectiveness in software development? Learn this
             from our blog, where we regularly share our knowledge.
           </p>
@@ -59,9 +59,9 @@ const Articles = () => {
               </div>
               <div className="p-4 space-y-2">
                 <p className="text-black font-normal">Semir Al Harbi</p>
-                <h2 className="text-[24px] leading-8 font-bold text-black">
+                <h1 className="text-lg leading-8 font-bold text-black">
                   Understanding and Achieving Product-Market Fit
-                </h2>
+                </h1>
                 <p className="text-black font-normal">#Strategy</p>
               </div>
             </div>
@@ -77,9 +77,9 @@ const Articles = () => {
               </div>
               <div className="p-4 space-y-2">
                 <p className="text-black font-normal">Kamil Żmijewski</p>
-                <h2 className="text-[24px] leading-8 font-bold text-black">
+                <h1 className="text-lg leading-8 font-bold text-black">
                   Finding Product-Market: A Growth Campaign Case Study
-                </h2>
+                </h1>
                 <p className="text-black font-normal">#Strategy</p>
               </div>
             </div>
@@ -96,9 +96,9 @@ const Articles = () => {
               </div>
               <div className="p-4 space-y-2">
                 <p className="text-black font-normal">Piotr Bernad</p>
-                <h2 className="text-[24px] leading-8 font-bold text-black">
+                <h1 className="text-lg leading-8 font-bold text-black">
                   How to Improve Your Product Without Feature Rush?
-                </h2>
+                </h1>
                 <p className="text-black font-normal">#Strategy</p>
               </div>
             </div>
@@ -106,10 +106,10 @@ const Articles = () => {
           <SwiperSlide>
             <div className="bg-white overflow-hidden duration-300">
               <div className="p-4 space-y-2">
-                <h2 className="text-[20px] leading-8 font-bold text-black text-left">
+                <h1 className="text-md leading-8 font-bold text-black text-left">
                   Learn more from our experience. Check out our articles with
                   business and technical expertise.
-                </h2>
+                </h1>
                 <div className="flex items-center mt-4">
                   <button className="button">
                     <span>Visit Our Blog</span>
